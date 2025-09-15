@@ -17,28 +17,127 @@
 		<link rel="stylesheet" href="/styles/style.css" />
 	</head>
 	<body>
-		<form action="" class="reg__form">
-			<section class="account__info">
-				<div>
-					<label for="name" class="">
+		<form action="" class="registration__form">
+			<fieldset class="account__info">
+				<div class="form__row">
+					<label for="name" class="form__label">
 						full name
-						<input type="text" id="name" required />
+						<input type="text" id="name" required class="form__input" />
 					</label>
-					<label for="name">
+					<label for="name" class="form__label">
 						email
-						<input type="email" id="email" required />
+						<input type="email" id="email" required class="form__input" />
 					</label>
 				</div>
-				<div>
-					<label for="password">
+				<div class="form__row">
+					<label for="password" class="form__label">
 						password
-						<input type="password" id="password" />
+						<input type="password" id="password" class="form__input" />
 					</label>
-					<label for="confirm-pwd">
+					<label for="confirm-pwd" class="form__label">
 						confirm password
-						<input type="password" id="confirm-pwd" />
+						<input type="password" id="confirm-pwd" class="form__input" />
 					</label>
 				</div>
+			</fieldset>
+
+			<fieldset class="gender">
+				<legend class="gender__title">Gender</legend>
+				<label for="male" class="gender__label">
+					male
+					<input
+						type="radio"
+						value="male"
+						id="male"
+						name="gender"
+						class="gender__input"
+					/>
+				</label>
+				<label for="male" class="gender__label">
+					female
+					<input
+						type="radio"
+						value="female"
+						id="female"
+						name="gender"
+						class="gender__input"
+					/>
+				</label>
+			</fieldset>
+
+			<fieldset class="interests">
+				<legend class="interests__title">What are your interest?</legend>
+				<label for="html-css" class="interest__label">
+					HTML & CSS
+					<input
+						type="checkbox"
+						name="html-css"
+						id="html-css"
+						class="interest__input"
+					/>
+				</label>
+				<label for="javascript" class="interest__label">
+					JavaScript
+					<input
+						type="checkbox"
+						name=""
+						id="javascript"
+						class="interest__input"
+					/>
+				</label>
+				<label for="python" class="interest__label">
+					Python
+					<input
+						type="checkbox"
+						name="race"
+						id="python"
+						class="interest__input"
+					/>
+				</label>
+				<label for="sql" class="interest__label">
+					SQL
+					<input type="checkbox" name="race" id="sql" class="interest__input" />
+				</label>
+				<label for="java" class="interest__label">
+					Java
+					<input
+						type="checkbox"
+						name="race"
+						id="java"
+						class="interest__input"
+					/>
+				</label>
+				<label for="c" class="interest__label">
+					C#
+					<input type="checkbox" name="race" id="c" class="interest__input" />
+				</label>
+				<label for="postgresql" class="interest__label">
+					PostgreSQL
+					<input
+						type="checkbox"
+						name="race"
+						id="postgresql"
+						class="interest__input"
+					/>
+				</label>
+			</fieldset>
+
+			<label for="messaage" class="message">
+				message
+				<textarea name="message" id="message" class="message__text"></textarea>
+			</label>
+
+			<section class="submit">
+				<label for="consent" class="consent__label" required>
+					I have read and consent to your policy.
+				</label>
+				<input
+					type="checkbox"
+					name="consent"
+					id="consent"
+					class="consent__input"
+				/>
+				<button class="submit__btn">Submit</button>
 			</section>
 		</form>
 	</body>
