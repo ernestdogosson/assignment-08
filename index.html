@@ -8,7 +8,38 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="/styles/style.css" />
 	</head>
-	<body></body>
+	<body>
+		<form action="" class="reg__form">
+			<section class="account__info">
+				<div>
+					<label for="name" class="">
+						full name
+						<input type="text" id="name" required />
+					</label>
+					<label for="name">
+						email
+						<input type="email" id="email" required />
+					</label>
+				</div>
+				<div>
+					<label for="password">
+						password
+						<input type="password" id="password" />
+					</label>
+					<label for="confirm-pwd">
+						confirm password
+						<input type="password" id="confirm-pwd" />
+					</label>
+				</div>
+			</section>
+		</form>
+	</body>
 </html>

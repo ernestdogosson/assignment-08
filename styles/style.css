@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+	box-sizing: content-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	background-color: #11115af5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 50px;
+}
+
+.reg__form {
+	width: 100%;
+	max-width: 600px;
+}
+
+.account__info {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	flex-wrap: wrap;
+	border: solid red;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+div {
+	display: flex;
+	gap: 20px;
+}
+
+label {
+	display: block;
+	width: 100%;
+	padding: 10px;
+}
+
+input {
+	display: block;
+	width: 100%;
+	flex: 1;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-top: 10px;
+}
+
+/* Place star for required fields */
+/*
+input[required] {
+	border: solid 1px black;
+}
+
+input[required]::after {
+	content: ' *';
+	color: red;
+}
+*/
